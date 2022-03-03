@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico" />
+
+        <title>Signin Template for Bootstrap</title>
+        {% load static %}
+        <link
+            rel="canonical"
+            href="https://getbootstrap.com/docs/4.0/examples/sign-in/"
+        />
+
+        <!-- Bootstrap core CSS -->
+        <link href="{% static 'main/bootstrap.min.css' %}" rel="stylesheet" />
+
+        <!-- Custom styles for this template -->
+        <link href="{% static 'main/custom.css' %}" rel="stylesheet" />
+
+        <script
+            src="https://kit.fontawesome.com/1750951602.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <body>
+        <h1 id="title">SASTRA Scraper</h1>
+        <form class="form-signin" class="site-form" method="post">
+            {% csrf_token %} {{ form }}
+
+            <div class="buttons">
+                <button
+                    class="btn btn-lg btn-warning btn-block"
+                    type="submit"
+                    name="add"
+                >
+                    Subscribe
+                </button>
+
+                <button
+                    class="btn btn-lg btn-secondary btn-block"
+                    type="submit"
+                    name="delete"
+                >
+                    Unsubscribe
+                </button>
+            </div>
+        </form>
+        <span> Made with <i class="fa fa-heart pulse"></i> by Arjun </span>
+    </body>
+</html>
