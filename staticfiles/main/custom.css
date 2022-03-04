@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    /* background-color: #c22424; */
+    background-image: linear-gradient(35deg, #1d1f1f, #363a3a);
+}
+
+.form-signin {
+    width: 500%;
+    max-width: 384px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .checkbox {
+    font-weight: 400;
+}
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+#title {
+    font-family: "Poppins";
+    color: #ffc107;
+    display: block;
+}
+
+span {
+    color: rgb(172, 167, 167);
+    font-size: 12px;
+    bottom: auto;
+    right: auto;
+    /* transform: translateX(-50%) translateY(-50%); */
+    /* text-align: center; */
+}
+span a {
+    color: #000000;
+    /* color: #faf5f6; */
+    text-decoration: none;
+}
+span .fa {
+    color: #e90606;
+    margin: 0 3px;
+    font-size: 10px;
+    animation: pound 0.35s infinite alternate;
+    -webkit-animation: pound 0.35s infinite alternate;
+}
+
+@-webkit-keyframes pound {
+    to {
+        transform: scale(1.1);
+    }
+}
+@keyframes pound {
+    to {
+        transform: scale(1.1);
+    }
+}
