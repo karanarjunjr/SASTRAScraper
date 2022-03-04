@@ -4,6 +4,6 @@ from . import views
         
 def start():
         scheduler = BackgroundScheduler()
-        scheduler.add_job(views.sendEmail, 'interval', minutes=60)
+        scheduler.add_job(views.sendEmail, 'interval', minutes=1)
         scheduler.start()
     
