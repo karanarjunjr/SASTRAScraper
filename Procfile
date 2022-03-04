@@ -1,1 +1,1 @@
-web: gunicorn SASTRAScraper.wsgi
+web: gunicorn SASTRAScraper.wsgi:application --log-file - --log-level debug
