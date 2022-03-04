@@ -1,0 +1,1 @@
+web: gunicorn SASTRAScraper.wsgi --log-file -
